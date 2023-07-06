@@ -23,5 +23,4 @@ def masacorporal(peso, altura):
 
 p = float(input("Ingrese su peso: "))
 a = float(input("Ingrese su altura: "))
-
 masacorporal(p, a) 
