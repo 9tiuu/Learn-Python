@@ -18,7 +18,7 @@ while True:
 | (5) Listar biblio por años |    
 | (0) Salir del menu         |
 |----------------------------|
-|     Creator by: Jeremy     |
+|     Created by: Jeremy     |
 """)
     
     try:
