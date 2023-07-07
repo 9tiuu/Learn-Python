@@ -15,4 +15,4 @@ Material utilizado para dar colores a las salidas por consola en Python: <a href
     | (5) Listar biblio por años |    
     | (0) Salir del menu         |
     |----------------------------|
-    |     Creator by: Jeremy     |
+    |     Created by: Jeremy     |
