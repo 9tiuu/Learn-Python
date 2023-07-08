@@ -10,16 +10,16 @@ os.system("cls")
 
 while True:
     print(""" 
-|  === Menu de opciones ===  |         
-| (1) Agregar libro          |
-| (2) Modificar libro        |
-| (3) Eliminar libro         |
-| (4) Listar biblioteca      |
-| (5) Listar biblio por años |    
-| (0) Salir del menu         |
-|----------------------------|
-|     Created by: Jeremy     |
-""")
+    |  === Menu de opciones ===  |         
+    | (1) Agregar libro          |
+    | (2) Modificar libro        |
+    | (3) Eliminar libro         |
+    | (4) Listar biblioteca      |
+    | (5) Listar biblio por años |    
+    | (0) Salir del menu         |
+    |----------------------------|
+    |     Created by: Jeremy     |
+    """)
     
     try:
         respuesta = int(input("Ingrese una opcion: ").strip())
