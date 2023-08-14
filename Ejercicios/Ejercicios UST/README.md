@@ -4,7 +4,7 @@
 
 # Introducción
 
-Estos ejercicios corresponden a la *Evaluación sumativa Unidad 3 Sección 1* de la universidad Santo Tomás (UST), quiero agradecer aquel profesor quien me dio la oportunidad de desarrollar esta guía de ejercicios para seguir reforzando mis conocimientos.
+Estos ejercicios corresponden a la *Evaluación sumativa Unidad 3 Sección 1* de la universidad Santo Tomás (UST), quiero agradecer aquel profesor quien me dio la oportunidad de desarrollar esta guía de ejercicios aunque forme parte en otra universidad para seguir reforzando mis conocimientos.
 
 ## Ejercicios:
 
