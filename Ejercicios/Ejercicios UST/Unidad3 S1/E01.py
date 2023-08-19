@@ -6,9 +6,8 @@ def interaccion_listas():
     lista2 = [3, 4, 5, 6]
 
     for numero in lista1:
-        for numeros in lista2:
-            if numero == numeros:
-                lista0.append(numero)
+        if numero in lista2:
+            lista0.append(numero)
 
     print(f'{lista1}, {lista2} -> {lista0}')
 
