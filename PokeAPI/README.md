@@ -4,4 +4,4 @@
 
 # Introducción
 
-Aplicando la programación orientada a objetos (POO), se desarrollo en clases este ejercicio en el que consiste obtener datos de un Pokemón desde la API "<a href="https://pokeapi.co/">PokeAPI</a>", a través de una ID ingresada por consola y almacenarlos en una base de datos (phpMyAdmin).
+Aplicando la programación orientada a objetos (POO) se desarrollo este ejercicio en clases, en el que consiste obtener datos desde la API "<a href="https://pokeapi.co/">PokeAPI</a>", ingresando el ID correspondiente del Pokémon mediante consola para almacenar los datos esenciales en una base de datos (phpMyAdmin).
