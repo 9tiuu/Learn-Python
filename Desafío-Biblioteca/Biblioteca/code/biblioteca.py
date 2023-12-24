@@ -1,13 +1,10 @@
-# Formativa 3
-
-biblioteca = [
-    # Libro integrado por defecto
-    {'titulo':'Juan salvador gaviota', 'codigo':1, 'año':1970}]
-
+# Formativa 3 | Update code: 24/12/23
 import os
 
-os.system("cls")
+biblioteca = [ # Libro integrado por defecto
+    {'titulo':'Juan salvador gaviota', 'codigo':1, 'año':1970}]
 
+os.system("cls")
 while True:
     print(""" 
     |  === Menu de opciones ===  |         
@@ -24,17 +21,14 @@ while True:
     try:
         respuesta = int(input("Ingrese una opcion: ").strip())
     except:
-        print()
-        print("> DATO INVALIDO")
-        print() 
+        print("\n> DATO INVALIDO\n")
 
     # --------------------------------------------------------- #
 
     os.system("cls")
 
     if respuesta == 1:
-        print("== Agregar libro ==")
-        print()
+        print("== Agregar libro ==\n")
 
         titulo = input("Titulo: ").strip().capitalize()
         try:
@@ -42,21 +36,15 @@ while True:
             año = int(input("Año: ").strip())
 
             if codigo < 0 or año < 0:
-                print()
-                print("> DATOS INGRESADOS NO VALIDOS")
-                print()
+                print("\n> DATOS INGRESADOS NO VALIDOS\n")
+                
             else:
                 libro = {'codigo': codigo, 'titulo':titulo, 'año':año}
                 biblioteca.append(libro)
-
-                print()
-                print("> LIBRO AGREGADO")
-                print()
+                print("\n> LIBRO AGREGADO\n")
 
         except:
-            print()
-            print("> DATO INVALIDO")
-            print()
+            print("\n> DATO INVALIDO\n")
         
         input("ENTER para volver al menu...")
         os.system("cls")
@@ -64,8 +52,7 @@ while True:
     # --------------------------------------------------------- #
 
     elif respuesta == 2:
-        print("== Modificar libro ==")
-        print()
+        print("== Modificar libro ==\n")
 
         if biblioteca == []:
             print("\033[;33mNO HAY LIBROS EN LA BIBLIOTECA\033[;37m")
@@ -73,36 +60,25 @@ while True:
         for libros in biblioteca:
             print(f"Titulo: \033[;32m{libros['titulo']}\033[;37m")
             print(f"Año: {libros['año']} | Codigo: {libros['codigo']}")
-            print("-------------------------")
-        print()
+            print("-------------------------\n")
 
         try:
             respuesta2 = int(input("Ingrese el codigo a MODIFICAR: ").strip())
-            print()
         except:
-            print()
-            print("> DATO INVALIDO")
-            print()
+            print("\n> DATO INVALIDO\n")
 
         for x in biblioteca:
             if respuesta2 == x['codigo']:
-
-                mtitulo = input("Nuevo titulo: ").strip().capitalize()
+                mtitulo = input("\nNuevo titulo: ").strip().capitalize()
                 
                 try:
                     maño = int(input("Nuevo año: ").strip())
-                    print()
-
                     x['titulo'] = mtitulo
                     x['año'] = maño
-
-                    print("> LIBRO MODIFICADO")
-                    print()
+                    print("\n> LIBRO MODIFICADO\n")
 
                 except:
-                    print()
-                    print("> DATO INVALIDO")
-                    print()
+                    print("\n> DATO INVALIDO\n")
 
         input("ENTER para volver al menu...")
         os.system("cls")            
@@ -110,8 +86,7 @@ while True:
     # --------------------------------------------------------- #
 
     elif respuesta == 3:
-        print("== Eliminar libro ==")
-        print()
+        print("== Eliminar libro ==\n")
 
         if biblioteca == []:
             print("\033[;33mNO HAY LIBROS EN LA BIBLIOTECA\033[;37m")
@@ -119,24 +94,18 @@ while True:
         for libros in biblioteca:
             print(f"Titulo: \033[;32m{libros['titulo']}\033[;37m")
             print(f"Año: {libros['año']} | Codigo: {libros['codigo']}")
-            print("-------------------------")
-        print()
+            print("-------------------------\n")
 
         try:
             respuesta3 = int(input("Codigo del libro a ELIMINAR: ").strip())
-            print()
-
+            
             for x in biblioteca:
                 if respuesta3 == x['codigo']:
                     biblioteca.remove(x)
-
-                    print("> LIBRO ELIMINADO")
-                    print()
+                    print("\n> LIBRO ELIMINADO\n")
 
         except:
-            print()
-            print("> DATO INVALIDO")
-            print()
+            print("\n> DATO INVALIDO\n")
         
         input("ENTER para volver al menu...")
         os.system("cls")
@@ -144,8 +113,7 @@ while True:
     # --------------------------------------------------------- #
 
     elif respuesta == 4:
-        print("== Listar biblioteca ==")
-        print()
+        print("== Listar biblioteca ==\n")
 
         if biblioteca == []:
             print("\033[;33mNO HAY LIBROS EN LA BIBLIOTECA\033[;37m")
@@ -153,8 +121,7 @@ while True:
         for libros in biblioteca:
             print(f"Titulo: \033[;32m{libros['titulo']}\033[;37m")
             print(f"Año: {libros['año']} | Codigo: {libros['codigo']}")
-            print("-------------------------")
-        print()
+            print("-------------------------\n")
 
         input("ENTER para volver al menu...")
         os.system("cls")
@@ -162,16 +129,12 @@ while True:
     # --------------------------------------------------------- #
 
     elif respuesta == 5:
-        print("== Listar biblioteca por año ==")
-        print()
+        print("== Listar biblioteca por año ==\n")
 
         try:
             respuesta5 = int(input("Ingrese el AÑO del libro: ").strip())
-            print()
         except:
-            print()
-            print("> DATO INVALIDO")
-            print()
+            print("\n> DATO INVALIDO\n")
 
         if biblioteca == []:
             print("\033[;33mNO HAY LIBROS EN LA BIBLIOTECA\033[;37m")
@@ -180,8 +143,7 @@ while True:
             if respuesta5 == libros['año']:
                 print(f"Titulo: \033[;32m{libros['titulo']}\033[;37m")
                 print(f"Año: {libros['año']} | Codigo: {libros['codigo']}")
-                print("-------------------------")
-        print()
+                print("-------------------------\n")
 
         input("ENTER para volver al menu...")
         os.system("cls")
@@ -189,12 +151,9 @@ while True:
     # --------------------------------------------------------- #
 
     elif respuesta == 0:
-        print()
-        print("> Adios...")
-        print()
+        print("\n> Adios...\n")
         break
 
     else:
-        print()
-        print("> OPCION INVALIDA, intentelo nuevamente")
+        print("\n> OPCION INVALIDA, intentelo nuevamente")
         
